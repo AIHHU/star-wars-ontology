@@ -1,0 +1,776 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#"
+     xml:base="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-13="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#_ueses_ -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#_ueses_">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#is_used_by"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberUser"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaber"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#is_used_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#is_used_by">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaber"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberUser"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_color_is -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_color_is">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaber"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberColor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_type_is -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_type_is">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaber"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#saber_color_is -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#saber_color_is">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberUser"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberColor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Ataru -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Ataru">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_type_is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#sharp"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberName"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#is_used_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Jedi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_color_is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#green"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#JarKai"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Juyo"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Makashi"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Niman"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Shien"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Shii-Cho"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Soresu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#JarKai -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#JarKai">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_type_is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#dual_weild"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberName"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#is_used_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Jedi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#is_used_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Sith"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_color_is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#green"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_color_is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#red"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Juyo"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Makashi"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Niman"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Shien"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Shii-Cho"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Soresu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Jedi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Jedi">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#saber_color_is"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#blue"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#saber_color_is"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#green"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberUser"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#_ueses_"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Jedi_Saber"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Sith"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Jedi_Saber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Jedi_Saber">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#is_used_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Jedi"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaber"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Juyo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Juyo">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_type_is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#violence"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberName"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#is_used_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Jedi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#is_used_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Sith"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_color_is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#blue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_color_is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#red"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Makashi"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Niman"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Shien"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Shii-Cho"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Soresu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaber">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberColor"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberType"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberUser"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberColor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberColor">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberType"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberUser"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberName -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberName">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaber"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberType">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberUser"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberUser -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberUser"/>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Makashi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Makashi">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_type_is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#attack"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberName"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#is_used_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Jedi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#is_used_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Sith"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_color_is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#blue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_color_is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#green"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_color_is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#red"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Niman"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Shien"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Shii-Cho"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Soresu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Niman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Niman">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_type_is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#balance"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberName"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#is_used_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Jedi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_color_is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#green"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Shien"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Shii-Cho"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Soresu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Shien -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Shien">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_type_is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#comprehensive"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberName"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#is_used_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Jedi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#is_used_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Sith"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_color_is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#blue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_color_is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#red"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Shii-Cho"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Soresu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Shii-Cho -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Shii-Cho">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_type_is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#basic"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberName"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#is_used_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Jedi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_color_is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#blue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_color_is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#green"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Soresu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Sith -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Sith">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#saber_color_is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#red"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberUser"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#_ueses_"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Sith_Saber"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Sith_Saber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Sith_Saber">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#is_used_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Sith"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaber"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Soresu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Soresu">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_type_is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#defense"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberName"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#is_used_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Jedi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#its_color_is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#blue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#attack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#attack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberType"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#balance"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#basic"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#comprehensive"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#defense"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#dual_weild"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#sharp"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#violence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#balance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#balance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberType"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#basic"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#comprehensive"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#defense"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#dual_weild"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#sharp"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#violence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#basic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#basic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberType"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#comprehensive"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#defense"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#dual_weild"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#sharp"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#violence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#blue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#blue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberColor"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#green"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#red"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#comprehensive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#comprehensive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberType"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#defense"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#dual_weild"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#sharp"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#violence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#defense -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#defense">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberType"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#dual_weild"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#sharp"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#violence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#dual_weild -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#dual_weild">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberType"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#sharp"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#violence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#green -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#green">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberColor"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#red"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#red -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#red">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberColor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#sharp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#sharp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberType"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#violence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#violence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#violence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberType"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Anakin_skywalker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Anakin_skywalker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberUser"/>
+        <_ueses_ rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaber_of_Anakin"/>
+        <saber_color_is rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#blue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Darth_Mole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Darth_Mole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberUser"/>
+        <_ueses_ rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaber_of_Darth_Mole"/>
+        <saber_color_is rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#red"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaber_of_Anakin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaber_of_Anakin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaber"/>
+        <is_used_by rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Anakin_skywalker"/>
+        <its_type_is rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#comprehensive"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaber_of_Darth_Mole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaber_of_Darth_Mole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaber"/>
+        <is_used_by rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Darth_Mole"/>
+        <its_type_is rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#violence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaber_of_Master_Yoda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaber_of_Master_Yoda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaber"/>
+        <is_used_by rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Master_Yoda"/>
+        <its_type_is rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#sharp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Master_Yoda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#Master_Yoda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaberUser"/>
+        <_ueses_ rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#LightSaber_of_Master_Yoda"/>
+        <saber_color_is rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#green"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#attack -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#attack">
+        <rdf:type rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#attack"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#balance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#balance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#balance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#basic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#basic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#basic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#blue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#blue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#blue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#comprehensive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#comprehensive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#comprehensive"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#defence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#defence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#defense"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#dual_weild -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#dual_weild">
+        <rdf:type rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#dual_weild"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#green -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#green">
+        <rdf:type rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#green"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#red -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#red">
+        <rdf:type rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#red"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#sharp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#sharp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#sharp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#violence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#violence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/顾舜贤/ontologies/2021/4/untitled-ontology-13#violence"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
